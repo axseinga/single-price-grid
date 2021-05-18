@@ -4,8 +4,10 @@
 
 $color-primary-1: hsl(179, 62%, 43%);
 $color-primary-2: hsl(71, 73%, 54%);
+$color-primary-3: hsl(179, 62%, 50%);
 $color-grey-light: hsl(204, 43%, 93%);
 $color-grey-dark: hsl(218, 22%, 67%);
+$color-white: #fff;
 
 /// Fonts
 
@@ -14,9 +16,132 @@ $font-primary: "Karla", sans-serif;
 /// Breakpoints
 
 ////////// Styles /////////
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; // 10px/16px
+  font-family: $font-primary;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.card {
+  min-width: 375px;
+  height: 300px;
+  padding: 3rem;
+}
+
+.card-1 {
+  background-color: $color-white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__heading--primary {
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
+    color: $color-primary-1;
+  }
+
+  &__heading--secondary {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: $color-primary-2;
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 3rem;
+    color: $color-grey-dark;
+  }
+}
+
+.card-2 {
+  background-color: $color-primary-1;
+  color: $color-white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__heading--primary {
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+  }
+
+  &__heading--secondary {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+
+    display: flex;
+
+    &--span {
+      font-size: 2rem;
+      font-weight: 400;
+      opacity: 50%;
+      padding-left: 1rem;
+
+      align-self: center;
+    }
+  }
+
+  &__text {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+  }
+
+  &__btn {
+    min-width: 320px;
+    height: 60px;
+    background-color: $color-primary-2;
+    color: $color-white;
+    border-radius: 5px;
+    border: solid 1px $color-primary-3;
+    font-size: 1.8rem;
+  }
+}
+
+.card-3 {
+  background-color: $color-primary-3;
+  color: $color-white;
+
+  &__heading--primary {
+    font-size: 2.3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__text {
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 2.2rem;
+  }
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin-top: 1rem;
 }
 
 .attribution a {
