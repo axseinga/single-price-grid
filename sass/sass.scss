@@ -1,0 +1,24 @@
+////////// Variables /////////
+
+/// Colors
+
+$color-primary-1: hsl(179, 62%, 43%);
+$color-primary-2: hsl(71, 73%, 54%);
+$color-grey-light: hsl(204, 43%, 93%);
+$color-grey-dark: hsl(218, 22%, 67%);
+
+/// Fonts
+
+$font-primary: "Karla", sans-serif;
+
+/// Breakpoints
+
+////////// Styles /////////
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
