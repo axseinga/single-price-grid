@@ -80,6 +80,9 @@ body {
     border-radius: 5px;
     border: solid 1px #30cfcc;
     font-size: 1.8rem; }
+    .card-2__btn:hover {
+      background-color: #30cfcc;
+      transition: 1s; }
 
 .card-3 {
   background-color: #30cfcc;
