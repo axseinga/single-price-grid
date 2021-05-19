@@ -10,13 +10,18 @@ html {
   font-family: "Karla", sans-serif; }
 
 body {
-  min-height: 100vh; }
+  min-height: 100vh;
+  background-color: #e5eff5; }
 
 .wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center; }
+  @media only screen and (min-width: 46.87rem) {
+    .wrapper {
+      align-items: center;
+      height: 100vh; } }
 
 .card {
   min-width: 375px;
@@ -80,12 +85,26 @@ body {
   background-color: #30cfcc;
   color: #fff; }
   .card-3__heading--primary {
+    padding-top: 1.5rem;
     font-size: 2.3rem;
     margin-bottom: 1.5rem; }
   .card-3__text {
     font-size: 1.7rem;
     font-weight: 400;
     line-height: 2.2rem; }
+
+@media only screen and (min-width: 46.87rem) {
+  .component {
+    width: 750px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-content: center; } }
+
+@media only screen and (min-width: 46.87rem) {
+  .component__bottom {
+    display: flex;
+    flex-direction: row; } }
 
 .attribution {
   font-size: 11px;
